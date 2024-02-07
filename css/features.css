@@ -1,0 +1,76 @@
+
+main{
+    background: url(../img/traaaaa\ \(2\).png);           /*var(--bg-secondary);*/
+    padding: 4rem 0;
+    position: relative;
+}
+
+.feature {
+    margin-bottom: 4rem; 
+}
+
+
+.feature h2{
+    color: var(--cl-accent);
+    
+}
+
+
+.feature:not(.widget) .content{   /******put the text in to the pic.***/
+    position: relative;
+    bottom: 2.5rem;
+}
+
+.widget iframe{
+    width: min(400px,100%); /***minimum width is 400px**/
+    min-height: 200;
+}
+
+
+
+
+               @media screen and (min-width:830px) {
+    .logo{
+        flex: 100%;
+        position:relative;
+        left: -105px;
+
+    }
+
+    .feature {
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+        margin-bottom: 10rem 0;
+        padding: 1rem 0;
+        border-right: 0.75rem solid purple;
+    }
+
+    .feature:nth-child(even) {       
+        flex-direction: row-reverse;
+        border-right: none;
+        border-left: 0.75rem solid var(--cl-accent);
+    } 
+
+
+    .feature figure{
+        flex:4;   /*Kontent sa zmesti 5x do obrazku napriklad*/
+        
+    }
+
+    .feature .content{
+        flex:2;
+        
+    }
+
+    .feature .content{
+        position: static;
+        padding: 0 2rem;
+    }
+
+    .feature:not(.widget) .content{
+        position: static;
+    }
+
+    
+}

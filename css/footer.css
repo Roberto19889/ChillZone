@@ -1,0 +1,88 @@
+/*LOGOS*/
+
+.us{
+    font-size: 1.5rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.footer-item{
+    padding: 4rem 0;
+    
+    
+
+}
+
+.logos{
+    max-width: 10rem;
+    
+}
+
+/* Newsletter */ /**zrusenie prednastavenych hodnot co prehliadac ma*/
+.newsletter h2{
+    margin-bottom: 0.35rem;
+}
+
+
+.newsletter input{
+    width: clamp(10rem,20vw,16rem);
+}
+
+.newsletter input,
+.newsletter button{
+    
+        border: none;  
+        background: white;
+        min-height: 3rem;
+        padding: 0.2rem 1rem;
+}
+
+.newsletter button{
+    margin-left: 0.5rem;
+    background-color: var(--cl-button);
+}
+/* Instagram */
+.instagram a{
+    display: inline-block;
+    max-width: 7rem;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 830px) {
+    /* LOGOS */
+    .us{
+        text-align: start;
+        display: grid;
+        grid-template-columns: 2fr 1fr; /*ulozenie elementov do mriezky 1:1*/
+    }
+
+
+    .footer-item{
+        padding: 1rem;
+        
+    }
+
+    .contact a{
+        text-decoration: underline;
+    }
+
+    .logos{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+/*  cisla grid overlay na Chrome
+
+    .newsletter{           
+        grid-column: 1/-1;
+    }*/
+
+.logos, .contact{
+    padding-bottom: 2rem;
+    align-self: end;
+}
+
+}
+

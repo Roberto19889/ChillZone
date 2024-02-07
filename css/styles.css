@@ -1,0 +1,107 @@
+:root { /****premenne**/
+    --bg-secondary: #100d0e;
+    --cl-accent:purple;
+    --cl-button:red;
+
+}
+
+
+*,
+
+*::before,
+
+*::after {
+
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    font-kerning: auto;
+
+}
+
+
+
+
+
+html{
+    font-size: 100%;
+    line-height: 1.15;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+}
+
+body{
+    
+    font-family: "Bebas Neue", Tahoma,Verdana,sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+img{
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,h2,h3{
+    margin: 0;
+    line-height: 1;
+ }
+
+h2{
+    
+    font-size: clamp(1.75rem,8vw,2.5rem); /*minimalna dovolena velkost,zelana velkost,maximalna dovolena velkost*/
+}
+
+h3{
+    
+    font-size: clamp(1.75rem,10vw,3.5rem);
+    color: white;
+}
+
+p{
+    font-family: tahoma,verdana,sans-serif;
+    font-size: clamp(1rem,1vw,1rem);
+    margin: 1rem 0 0;
+    color: white;
+
+}
+
+figure{
+    margin: 0;
+}
+
+.menu{
+    margin: 0;
+    padding-left: 0;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+ .container{
+    padding: 0 1.25rem;
+    max-width: 1170px;
+    margin: 0px auto;
+}
+ /* newsletter */
+input,
+button{
+    all: unset;
+    color: black;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: 1;
+}
+
+button{
+    cursor: pointer;
+}
